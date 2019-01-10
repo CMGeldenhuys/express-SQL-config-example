@@ -44,3 +44,7 @@ const pool = mysql.createPool({
 // INIT END POINTS
 app.get('/fisher/all', (req, res) => FisherTrip.getAllTrips(req, res, pool));
 app.get('/fisher/:id', (req, res) => FisherTrip.getTripsFor(req, res, pool));
+
+String.prototype.sqlEyes = function() {
+    
+}
